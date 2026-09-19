@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream-50: #FFFDF9;
+  --color-cream-100: #FDFBF7;
+  --color-cream-200: #FAF5EE;
+  --color-cream-300: #F3EAE0;
+  --color-cream-400: #E8DCCF;
+
+  --color-choco-950: #1D0F08;
+  --color-choco-900: #2C180D;
+  --color-choco-800: #3E2313;
+  --color-choco-700: #4A2E1B;
+  --color-choco-600: #684128;
+  --color-choco-500: #885637;
+  --color-choco-200: #E7D5C7;
+  --color-choco-100: #F3EBE4;
+  --color-choco-50: #FAF6F3;
+
+  --color-warmpink-600: #DB2777;
+  --color-warmpink-500: #EC4899;
+  --color-warmpink-400: #F472B6;
+  --color-warmpink-300: #F9A8D4;
+  --color-warmpink-200: #FBCFE8;
+  --color-warmpink-100: #FCE7F3;
+  --color-warmpink-50: #FDF2F8;
+
+  --color-peach-500: #F97316;
+  --color-peach-400: #FB923C;
+  --color-peach-300: #FDBA74;
+  --color-peach-200: #FED7AA;
+  --color-peach-100: #FFEDD5;
+  --color-peach-50: #FFF7ED;
+
+  --color-charcoal-950: #0B0F19;
+  --color-charcoal-900: #111827;
+  --color-charcoal-800: #1F2937;
+  --color-charcoal-700: #374151;
+  --color-charcoal-600: #4B5563;
+  --color-charcoal-500: #6B7280;
+  --color-charcoal-300: #D1D5DB;
+  --color-charcoal-100: #F3F4F6;
+}
+
+:root {
+  --background: #FDFBF7;
+  --foreground: #1F2937;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Custom scrollbar for modern feel */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF5EE;
+}
+::-webkit-scrollbar-thumb {
+  background: #D5C2B2;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B39B88;
+}
+
+/* Indian Vegetarian / Eggless badge standard styling */
+.veg-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 15px;
+  height: 15px;
+  border: 1.5px solid #16A34A;
+  border-radius: 3px;
+  background: #FFFFFF;
+  padding: 1px;
+}
+.veg-badge-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #16A34A;
+}
+
+.non-veg-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 15px;
+  height: 15px;
+  border: 1.5px solid #DC2626;
+  border-radius: 3px;
+  background: #FFFFFF;
+  padding: 1px;
+}
+.non-veg-badge-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #DC2626;
+}
+
